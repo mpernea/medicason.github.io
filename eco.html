@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>MEDICASON</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+
+	<style>
+	
+		.navbar-brand {
+			font-size:1.8em;
+			margin:0;
+		}
+		
+		.navbar {
+			background-color:#063780; 
+			width:100%;
+			margin:0;
+		}
+		
+		.stanga { 
+			float:left;
+			margin-left:-300px;
+		}
+				
+		#map-canvas { 
+			width:400px;
+			height:400px; 
+			border-radius:50px;
+			border-color:#073781;
+			border-style:solid;
+			float:left;
+			border-width:7px;
+		
+			margin-bottom:30px;
+		}
+	
+		#topContainer {
+			background-image:url("background5.jpg");
+			height:400px;
+			width:100%;
+			background-size:cover;
+			background-position:center;
+		}
+		
+		#topRow {
+			margin-top:366px;
+			text-align:center;
+			color:white;
+		}
+		
+		#topRow h1 {
+			font-size:300%;
+		}
+		
+		.bold {
+			font-weight:bold;
+		}
+		
+		.marginTop {
+			margin-top:20px;
+		}
+		
+		.center {
+			text-align:center;
+			
+		}
+		
+		.title {
+			margin-top:50px;
+			font-size:300%;
+			color:#7567E7;
+		}
+		
+		.middleculoaretext { 
+			color:#B57557;
+		}
+		
+		.mijloctext {
+			font-size:120%;
+		}
+		
+		#footer {
+			background-color:#B0D1FB;
+			width:100%;
+		}
+		
+		#marginBottom {
+			margin-bottom:20px;
+		}
+		
+		#middle {
+			background-color:#FFE7C6;
+			width:100%;
+		}
+		
+		.mare {
+			font-size:150%;
+		}
+		
+		.margine {
+			margin-left:10px;
+		}
+		
+		.marginTopp {
+			margin-top:-300px;
+		}
+		
+		.navbar-toggle {
+			background-color:#FFE7C6;
+			margin:0;
+		}
+		
+		#link {
+			color:#ffcf58;
+			font-family:Aller;
+			font-weight:bold;
+			font-size:125%;
+		}
+		
+		#linkimagine {
+			margin-top:-15px;
+		}
+		
+		#cul .active a,
+		#cul .active a:hover {
+		background-color:#EB5D00;
+		}
+		
+		#lat {
+			width:30%;
+			margin-left:200px;
+			text-align:center;
+		}
+		
+		.fof {
+			font-family:AvenirLTStd-Book;
+		}
+		
+		.header {
+			color:#073781;
+		}
+		
+		.culsus {
+			color:#ffcf58;
+		}
+		
+		.unde { 
+			color:#073781;
+			font-size:250%;
+		}
+		
+		#undetext { 
+			color:#073781;
+			font-size:150%;
+		}
+		
+		.left { 
+			margin-left:250px;
+		}
+		
+		.text1 {
+			margin-left:-300px;
+			margin-top:25px;
+			margin-right:215px;
+			font-size:130%;
+			text-align:left;
+			color:#5fd2ff;
+			
+		}
+		
+
+		
+	
+		
+	</style>
+	
+	 <script src="https://maps.googleapis.com/maps/api/js"></script>
+	 
+	 <script>
+    function initialize() {
+  	var myLatlng = new google.maps.LatLng(47.34512585908193,22.336839884519577);
+  	var mapOptions = {
+    	zoom: 16,
+    	center: myLatlng
+  	}
+  	
+  	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  	var marker = new google.maps.Marker({
+      	position: myLatlng,
+      	map: map,
+      	title: 'Hello World!'
+  		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+  </head>
+  
+  
+  <body data-spy="scroll" data-target=".navbar-collapse" class="fof">
+  <div class="navbar navbar-default navbar-fixed-top">
+  	<div class="container">
+  		<div class="navbar-header">
+  			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  			</button>
+  		<a class="navbar-brand" id="linkimagine"><img src="logosimplu.png"/></a>
+  		</div>
+  		<div class="collapse navbar-collapse sus">
+  			<ul class="nav navbar-nav " id="cul">
+  				<li class="active"><a href="#topContainer" id="link" >CINE SUNTEM?</a></li>
+  				<li><a href="#middle" id="link">SERVICII</a></li>
+  				<li><a href="#footer" id="link">CONTACT si PROGRAMARI</a></li>
+  			</ul>			
+  		</div>
+  		</div></div>
+  
+  <div class="container contentContainer" id="topContainer">
+  
+  	<div class="row">
+  	
+  		<div class="col-md-6 col-md-offset-3" id="topRow">		
+  		<h1 class="marginTopp"></h1>		
+  		<p class="lead mare culsus">De ce suntem cea mai buna alegere?</p>		
+  		<p class="culsus" style="font-size:130%">MEDICASON va ofera o gama variata de 
+  		examinari ecografice de cea mai inalta calitate la preturi foarte avantajoase. Cu
+  		o experienta vasta in domeniu acumulata incepand cu anul 2001, Loret ipsum doloret
+  		Loret ipsum doloret Loret ipsum doloret Loret ipsum doloret Loret ipsum doloret
+  		Loret ipsum doloret Loret ipsum doloret Loret ipsum doloret Loret ipsum doloret
+  		Loret ipsum doloret Loret ipsum doloret Loret ipsum.</p>	
+  		
+  		<p class="text1"><b>Dr. Marius Pernea - Administrator MEDICASON</b><br></br>
+  		Lorem Ipsum is simply dummy text of the printing and typesetting 
+  		industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+  		1500s, when an unknown printer took a galley of type and scrambled it to make a 
+  		type specimen book. It has survived not only five centuries, but also the leap into 
+  		electronic typesetting, remaining essentially unchanged. It was popularised in the 
+  		1960s with the release of Letraset sheets containing Lorem Ipsum passages, and 
+  		more recently with desktop publishing software like Aldus PageMaker including 
+  		versions of Lorem Ipsum. </p>
+  		<br />
+  		<br />
+  		<br />
+  		<br />
+  		<br />
+  		
+  		</div>	
+  		
+  		
+  	</div>
+  </div>
+  </div>
+  
+  <div class="container contentContainer" id="middle">
+  
+  	<div class="row" class="center">
+  	
+  		<h1 class="center title middleculoaretext"><b>Ce servicii va oferim?</b></h1>
+  		<p class="lead center">Va punem la dispozitie o larga varietate de servicii ce au la baza
+  		metodele imagistice bazate pe ultrasunet si pot fi folosite atat in scopuri 
+  		diagnostice pentru alegerea unui tratament ajustat nevoilor individuale ale 
+  		pacientului, cat si in scopuri de monitorizare a starii de sanatate a pacientului 
+  		post-terapeutic sau post-operativ. Urmatoarele tipuri de ecografie sunt disponibile:</p>
+  	
+  	<div class="row" id="marginBottom">
+  	
+  		<div class="col-md-4 marginTop">
+  		
+  		<h2 class="margine header"><img src="ultrasound0.png" />Ecografie generala</h2>
+  		
+  		<p class="margine mijloctext">Ecografia generala este o metoda imagistica de 
+  		diagnostic care investigheaza abdomenul, tiroida, partile moi si testiculele. 
+  		Aceasta metoda este neinvaziva si nu are efecte 
+  		adverse daunatoare. <br></br>
+  		 
+  		Des folosita pentru diagnosticarea unor conditii medicale, ea este foarte importanta si in monitorizarea progresului post-terapeutic. 
+  		De asemenea, o buna evaluare a starii de sanatate a organelor interne poate fi obtinuta 
+  		folosind aceasta metoda in cadrul controalelor periodice.  </p>
+  		
+  		
+  		
+  		</div>
+  		
+  		<div class="col-md-4 marginTop">
+  		<h2 class="header"><img src="ultrasound0.png" /> Ecografie cardiaca</h2>
+  		<p class="mijloctext">Explorarea inimii cu ajutorul acestei metode permite 
+  		masurarea dimensiunilor cavitatilor cardiace precum si ale vaselor mari de sange 
+  		care se varsa in inima, aceste masuratori oferind date importante despre 
+  		functionalitatea acesteia. In plus, ecografia cardiaca permite o foarte fidela si 
+  		sigura apreciere a morfologiei si functiei valvelor inimii. <br></br>
+  		Cu ajutorul metodei Doppler, viteza sangelui in orice punct al inimii poate fi masurata, permitand depistarea 
+  		insuficientelor valvulare. 
+</p>
+
+  		
+  		</div>
+  		
+  		<div class="col-md-4 marginTop ">
+  		<h2 class="header"><img src="ultrasound0.png" />  Ecografie endovaginala</h2>
+
+  		<p class="mijloctext">Aceasta este o metoda imagistica non-invaziva ce permite 
+  		investigarea organelor genitale interne cu ajutorul ultrasunetelor. Introducerea 
+  		endovaginala a traducatorului permite o evaluare foarte clara si meticuloasa a 
+  		organelor pelvice si obtinerea unor imagini de foarte buna calitate. <br></br>
+  		De asemenea, este o metoda foarte sigura de a detecta eventualele afectiuni ale
+  		fatului precum si de a evalua progresul acestuia in ceea ce priveste pozitia sau
+  		marimea.</p>
+  		
+  		
+  		</div>
+  		
+  		
+  		<div class="col-md-4 marginTop">
+  		
+  		<h2 class="margine header"><img src="ultrasound0.png" /> Ecografie vasculara</h2>
+  		
+  		<p class="margine mijloctext">Acest tip de ecografie permite obtinerea unor 
+  		informatii si proprietati dinamice cu privire la fluxul de sange din interiorul 
+  		arterelor si venelor. El ofera imaginea structurilor investigate impreuna cu 
+  		informatii despre fluxul sanguin in cadrul vasului de sange examinat, parametrii 
+  		acestuia precum si informatii despre cum acesta se modifica in cazul unor 
+  		schimbari a structurii fizice a vasului de sange respectiv. <br></br>
+  		Un mare avantaj al acestei proceduri consta in faptul ca aceasta este o procedura 
+  		non-invaziva care nu iradiaza, spre deosebire de celelalte standarde diagnostice 
+  		folosite in acest domeniu.</p>
+  		
+  		
+  		</div>
+  		
+  		<div class="col-md-4 marginTop ">
+  		<h2 class="header"><img src="ultrasound0.png" /> Ecografie parti moi</h2>
+  		<p class="mijloctext">Ecografia de parti moi permite evaluarea tesutului subcutanat, 
+  		limfatic sau muscular pentru depistarea unor leziuni benigne sau maligne, unor 
+  		rupturi musculare, chisturi sau inflamatii limfatice. Aceasta este o metoda simpla,
+  		non-invaziva care nu necesita scanarea folosind aparate de rezonanta magnetica sau 
+  		cu raze X si drept urmare fara efecte adverse daunatoare. </p>
+  		
+  		</div>
+  		
+  		<div class="col-md-4 marginTop ">
+  		<h2 class="header"><img src="ultrasound0.png" /> Elastografie mamara</h2>
+  		<p class="mijloctext">Elastografia mamara este o procedura in care se investigheaza 
+  		duritatea tesutului din care nodulul mamar este format. Aceasta proprietate este 
+  		raportata la tesutul normal care inconjoara respectivul nodul si este comparata 
+  		cu duritatea acestuia prin intermediul unei scale de culori. O duritate ridicata 
+  		poate indica prezenta unei malformatii maligne. <br></br>
+  		
+  		O procedura foarte importanta pentru diagnosticarea acestor tipuri de malformatii, 
+  		elastografia este de asemenea o investigatie foarte potrivita pentru a diferentia 
+  		malformatiile benigne de cele maligne si drept urmare folosita des pentru 
+  		alegerea tratamentului cel mai potrivit pentru pacient.
+		</p>
+  		
+  		</div>
+  	
+  	</div>
+  	
+  	</div>
+  
+  </div>
+  
+  <div class="container contentContainer" id="footer">
+  
+  	<div class="row">
+  		
+  		<h1 class="center title"><b>Contact si programari</b></h1>
+  		
+  		<p class="lead center">Programarile pentru unul din serviciile mentionate mai
+  		sus se pot face telefonic sau prin e-mail. Unele dintre aceste servicii sunt
+  		disponibile doar in anumite zile ale saptamanii. Daca aveti nelamuriri sau intrebari
+  		cu privire la serviciile oferite, nu ezitati sa ne contactati la adresa de e-mail
+  		sau numerele de telefon afisate mai jos.</p>
+  		
+  		<br></br>
+  		
+  		<p class="lead left mare"><span class="glyphicon glyphicon-envelope"></span> <b>Email: </b>marghitas1000@gmail.com</p>
+  		
+  		<p class="lead left mare"><span class="glyphicon glyphicon-earphone"></span> <b>Contact telefonic: </b>0259 36 35 46 ; 0743 30 52 35 </p>
+  		
+	<div class="col-md-6 marginTop" id="lat">
+	<h2 class="unde"><b>Unde ne puteti gasi?</b></h2>
+	<p id="undetext">Suntem situati in incinta serviciului de Ambulanta Marghita, vis-a-vis de 
+	magazinul Orange.</p>
+	</div>
+	
+  	<div class="col-md-6 marginTop">
+  		<div id="map-canvas">
+  		
+  		</div>
+  	
+  	</div>
+
+  	</div>
+  
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+    
+    	$(".contentContainer").css("min-height",$(window).height());
+    		
+    </script>
+    
+  </body>
+</html>
